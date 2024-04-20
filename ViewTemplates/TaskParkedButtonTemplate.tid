@@ -1,0 +1,19 @@
+created: 20240418215446793
+creator: jpjerkins
+modified: 20240418215446793
+creator: jpjerkins
+tags: TaskHeaderToolbarControl
+title: $:/plugins/pjerkins/aw-parked-tasks/ViewTemplates/TaskParkedButtonTemplate
+
+<$list filter="[is[current]!tag[Parked]]">
+    <$button>
+        <$action-listops $tiddler=<<currentTiddler>> $field="tags" $subfilter="+[append[Parked]]" />
+        Parked!
+    </$button>
+</$list>
+<$list filter="[is[current]tag[Parked]]">
+    <$button>
+        <$action-listops $tiddler=<<currentTiddler>> $field="tags" $subfilter="-Parked" />
+        !Parked
+    </$button>
+</$list>

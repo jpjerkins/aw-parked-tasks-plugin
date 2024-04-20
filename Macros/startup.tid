@@ -1,0 +1,20 @@
+created: 20240418215446793
+creator: jpjerkins
+modified: 20240418215446793
+modifier: jpjerkins
+tags: $:/tags/StartupAction/PostRender
+title: $:/plugins/pjerkins/aw-parked-tasks/Macros/StartUp
+
+<$reveal
+ state="$:/temp/TaskFilter!!parked-filter-flag"
+ text="Parked Tasks Filter Added"
+ type=nomatch>
+    <$action-setfield
+    $tiddler="$:/temp/TaskFilter"
+    $field="text"
+    $value=`${[{$:/temp/TaskFilter!!text}]}$!tag[Parked]` />
+    <$action-setfield
+    $tiddler="$:/temp/TaskFilter"
+    $field="parked-filter-flag"
+    $value="Parked Tasks Filter Added" />
+</$reveal>
