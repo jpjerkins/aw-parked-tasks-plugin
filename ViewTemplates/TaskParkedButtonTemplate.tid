@@ -6,15 +6,14 @@ tags: TaskHeaderToolbarControl
 title: $:/plugins/pjerkins/aw-parked-tasks/ViewTemplates/TaskParkedButtonTemplate
 list-after: $:/plugins/pjerkins/aw-basic-tasks/ViewTemplates/TaskDoneButtonTemplate
 
-<$list filter="[is[current]!tag[Parked]]">
+<% if [is[current]!tag[Parked]] %>
     <$button>
         <$action-listops $tiddler=<<currentTiddler>> $field="tags" $subfilter="+[append[Parked]]" />
         Parked!
     </$button>
-</$list>
-<$list filter="[is[current]tag[Parked]]">
+<% else %>
     <$button>
         <$action-listops $tiddler=<<currentTiddler>> $field="tags" $subfilter="-Parked" />
         !Parked
     </$button>
-</$list>
+<% endif %>
