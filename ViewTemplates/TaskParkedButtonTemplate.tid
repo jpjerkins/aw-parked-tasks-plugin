@@ -4,6 +4,7 @@ modified: 20240418215446793
 creator: jpjerkins
 tags: TaskHeaderToolbarControl
 title: $:/plugins/pjerkins/aw-parked-tasks/ViewTemplates/TaskParkedButtonTemplate
+list-after: $:/plugins/pjerkins/aw-basic-tasks/ViewTemplates/TaskDoneButtonTemplate
 
 <$list filter="[is[current]!tag[Parked]]">
     <$button>
