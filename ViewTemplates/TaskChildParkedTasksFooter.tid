@@ -1,0 +1,18 @@
+created: 20240423030457419
+creator: jpjerkins
+modified: 20240423030457419
+creator: jpjerkins
+tags: template $:/tags/ViewTemplate
+title: $:/plugins/pjerkins/aw-parked-tasks/ViewTemplates/TaskChildParkedTasksFooter
+list-after: $:/core/ui/ViewTemplate/body
+
+<% if [is[current]tag[Task]tagging[]!tag[Done]tag[Parked]first[]] %>
+    
+    <h2>Parked</h2>
+    
+    <$list filter="[is[current]tag[Task]tagging[]!tag[Done]tag[Parked]sort[title]]">
+        {{||$:/plugins/pjerkins/aw-parked-tasks/ViewTemplates/TaskPButtonTemplate}}
+        <$link />
+        <br/>
+    </$list>
+<% endif %>
