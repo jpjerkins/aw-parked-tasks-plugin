@@ -6,14 +6,18 @@ tags: TaskActionBarControl
 title: $:/plugins/pjerkins/aw-parked-tasks/ViewTemplates/TaskPButtonTemplate
 list-after: $:/plugins/pjerkins/aw-basic-tasks/ViewTemplates/DeleteTaskButton
 
+\import [[$:/plugins/pjerkins/aw-basic-tasks/ViewTemplates/TaskActionBar3Dot]]
+
 <% if [is[current]!tag[Parked]] %>
     <$button>
         <$action-listops $tiddler=<<currentTiddler>> $field="tags" $subfilter="+[append[Parked]]" />
+        <<closeActionBarActions>>
         P!
     </$button>
 <% else %>
     <$button>
         <$action-listops $tiddler=<<currentTiddler>> $field="tags" $subfilter="-Parked" />
         !P
+        <<closeActionBarActions>>
     </$button>
 <% endif %>
