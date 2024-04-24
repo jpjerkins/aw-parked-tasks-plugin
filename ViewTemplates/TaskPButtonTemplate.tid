@@ -4,7 +4,7 @@ modified: 20240423030457419
 creator: jpjerkins
 tags: TaskActionBarControl
 title: $:/plugins/pjerkins/aw-parked-tasks/ViewTemplates/TaskPButtonTemplate
-list-after: $:/plugins/pjerkins/aw-basic-tasks/ViewTemplates/TaskDoneCheckButton
+list-after: $:/plugins/pjerkins/aw-basic-tasks/ViewTemplates/DeleteTaskButton
 
 <% if [is[current]!tag[Parked]] %>
     <$button>
