@@ -1,10 +1,14 @@
 created: 20240425031535499
 modified: 20240425031755308
 tags: 
-title: $:/plugins/pjerkins/aw-parked-tasks/AllParkedTasks
+title: $:/plugins/pjerkins/aw-parked-tasks/AllParkedRootTasks
 type: text/vnd.tiddlywiki
 
-<$list filter="[tag[Task]tag[Parked]]">
+\define hasParentsFilter() [tags[]tag[Task]]
+
+!! Parked Root Tasks
+
+<$list filter="[tag[Task]tag[Parked]!filter<hasParentsFilter>]">
     {{||$:/plugins/pjerkins/aw-basic-tasks/ViewTemplates/TaskActionBar3Dot}}
     <$link />
     {{||$:/plugins/pjerkins/aw-basic-tasks/ViewTemplates/TaskActionBar}}
