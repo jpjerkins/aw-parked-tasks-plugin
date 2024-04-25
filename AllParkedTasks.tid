@@ -1,0 +1,11 @@
+created: 20240425031535499
+modified: 20240425031755308
+tags: 
+title: $:/plugins/pjerkins/aw-parked-tasks/AllParkedTasks
+type: text/vnd.tiddlywiki
+
+<$list filter="[tag[Task]tag[Parked]]">
+    {{||$:/plugins/pjerkins/aw-basic-tasks/ViewTemplates/TaskActionBar3Dot}}
+    <$link />
+    {{||$:/plugins/pjerkins/aw-basic-tasks/ViewTemplates/TaskActionBar}}
+</$list>
