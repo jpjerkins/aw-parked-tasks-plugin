@@ -12,4 +12,5 @@ type: text/vnd.tiddlywiki
     {{||$:/plugins/pjerkins/aw-basic-tasks/ViewTemplates/TaskActionBar3Dot}}
     <$link />
     {{||$:/plugins/pjerkins/aw-basic-tasks/ViewTemplates/TaskActionBar}}
+    <br/>
 </$list>
