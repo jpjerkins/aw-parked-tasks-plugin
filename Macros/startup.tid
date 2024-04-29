@@ -12,9 +12,31 @@ title: $:/plugins/pjerkins/aw-parked-tasks/Macros/StartUp
     <$action-setfield
     $tiddler="$:/temp/TaskFilter"
     $field="text"
-    $value=`${[{$:/temp/TaskFilter!!text}]}$!tag[Parked]` />
+    $value=`${[{$:/temp/TaskFilter!!text}]}$${[{$:/plugins/pjerkins/aw-parked-tasks/Macros/NotParkedFilter!!text}]}$` />
     <$action-setfield
     $tiddler="$:/temp/TaskFilter"
     $field="parked-filter-flag"
     $value="Parked Tasks Filter Added" />
+</$reveal>
+
+<$reveal
+ state="$:/temp/ParkedTasksOtherExclusionFilters!!parked-filter-flag"
+ text="Parked Tasks Other Exclusion Filters Added"
+ type=nomatch>
+    <$action-setfield
+    $tiddler="$:/temp/ParkedTasksOtherExclusionFilters"
+    $field="text"
+    $value="" />
+    <$list filter="[all[shadows+tiddlers]tag[DefaultTaskExclusionFilter]!tag[ParkedTasks]]" variable="currentExclusionFilterSource">
+        <$vars currentExclusionFilter={{{ [<currentExclusionFilterSource>get[text]] }}}>
+            <$action-setfield
+            $tiddler="$:/temp/ParkedTasksOtherExclusionFilters"
+            $field="text"
+            $value=`${[{$:/temp/ParkedTasksOtherExclusionFilters!!text}]}$$(currentExclusionFilter)$` />
+        </$vars>
+    </$list>
+    <$action-setfield
+    $tiddler="$:/temp/ParkedTasksOtherExclusionFilters"
+    $field="parked-filter-flag"
+    $value="Parked Tasks Other Exclusion Filters Added" />
 </$reveal>

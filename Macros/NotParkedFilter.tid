@@ -1,0 +1,7 @@
+created: 20240429003122178
+modified: 20240429003242295
+tags: DefaultTaskExclusionFilter ParkedTasks
+title: $:/plugins/pjerkins/aw-parked-tasks/Macros/NotParkedFilter
+type: text/vnd.tiddlywiki
+
+!tag[Parked]
