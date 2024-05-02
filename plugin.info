@@ -1,12 +1,12 @@
 {
-    "created": "20240418215446793",
-    "title": "$:/plugins/pjerkins/aw-parked-tasks",
-    "modified": "20240418215446793",
-    "core.version": ">=5.3.3",
-    "description": "ArchWork Parked Tasks plugin",
-    "plugin-type": "plugin",
-    "version": "0.0.07",
-    "name": "aw-parked-tasks",
-    "dependents": "[[$:/plugins/pjerkins/aw-parked-tasks]]",
-    "list": "readme"
+  "created": "20240418215446793",
+  "title": "$:/plugins/pjerkins/aw-parked-tasks",
+  "modified": "20240418215446793",
+  "core.version": ">=5.3.3",
+  "description": "ArchWork Parked Tasks plugin",
+  "plugin-type": "plugin",
+  "version": "0.0.09",
+  "name": "aw-parked-tasks",
+  "dependents": "[[$:/plugins/pjerkins/aw-parked-tasks]]",
+  "list": "readme"
 }
