@@ -5,7 +5,7 @@
   "core.version": ">=5.3.3",
   "description": "ArchWork Parked Tasks plugin",
   "plugin-type": "plugin",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "name": "aw-parked-tasks",
   "dependents": "[[$:/plugins/pjerkins/aw-parked-tasks]]",
   "list": "readme"
